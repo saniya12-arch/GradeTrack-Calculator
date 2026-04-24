@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GradeTrack</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>GPA CALCULATOR</h2>
+
+  <table id="table">
+    <tr>
+      <th>Subject</th>
+      <th>Marks</th>
+      <th>Credits</th>
+    </tr>
+  </table>
+
+  <div class="buttons">
+    <button onclick="addRow()">➕ Add Course</button>
+    <button onclick="clearAll()">❌ Clear All</button>
+  </div>
+
+  <button class="calc" onclick="calculateSGPA()">Calculate SGPA</button>
+
+  <h3 id="sgpa"></h3>
+
+  <hr>
+
+  <h3>CGPA</h3>
+  <input id="prevCgpa" placeholder="Previous CGPA">
+  <input id="sem" placeholder="Semesters">
+
+  <button class="calc" onclick="calculateCGPA()">Calculate CGPA</button>
+
+  <h3 id="cgpa"></h3>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
